@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Excavadora",
+        "price": "55000",
+        "url": "https://cdn1.iconfinder.com/data/icons/construction-tool-line-foreman-equipment/512/Crane-512.png",
+        "id": 1
+    },
+    {
+        "title": "auto",
+        "price": "50000",
+        "url": "https://cdn1.iconfinder.com/data/icons/adventure-outline-1/64/Adventure-Line-23-128.png",
+        "id": 2
+    },
+    {
+        "title": "camara",
+        "price": "9000",
+        "url": "https://cdn1.iconfinder.com/data/icons/adventure-outline-1/64/Adventure-Line-22-128.png",
+        "id": 3
+    },
+    {
+        "title": "camara",
+        "price": "9000",
+        "url": "https://cdn1.iconfinder.com/data/icons/adventure-outline-1/64/Adventure-Line-22-128.png",
+        "id": 4
+    },
+    {
+        "title": "camara2",
+        "price": "300",
+        "url": "https://cdn1.iconfinder.com/data/icons/adventure-outline-1/64/Adventure-Line-22-128.png",
+        "id": 5
+    },
+    {
+        "title": "mochila",
+        "price": "20",
+        "url": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Backpack-128.png",
+        "id": 6
+    },
+    {
+        "title": "mochila2",
+        "price": "3000",
+        "url": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Backpack-128.png",
+        "id": 7
+    },
+    {
+        "title": "camara",
+        "price": "430",
+        "url": "https://cdn1.iconfinder.com/data/icons/adventure-outline-1/64/Adventure-Line-22-128.png",
+        "id": 8
+    },
+    {
+        "title": "camara",
+        "price": "333",
+        "url": "https://cdn1.iconfinder.com/data/icons/adventure-outline-1/64/Adventure-Line-22-128.png",
+        "id": 9
+    },
+    {
+        "title": "mochila",
+        "price": "22",
+        "url": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Backpack-128.png",
+        "id": 10
+    },
+    {
+        "title": "test",
+        "price": "33",
+        "url": "https://cdn1.iconfinder.com/data/icons/adventure-outline-1/64/Adventure-Line-22-128.png",
+        "id": 11
+    },
+    {
+        "title": "Excavadora",
+        "price": "222",
+        "url": "https://cdn1.iconfinder.com/data/icons/construction-tool-line-foreman-equipment/512/Crane-512.png",
+        "id": 12
+    }
+]

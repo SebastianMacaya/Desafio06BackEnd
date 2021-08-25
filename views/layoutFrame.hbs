@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio Handlebars</title>
+  <meta name="description" content="Vista de productos">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  
+    <div>
+    
+        {{!-- Botones de navegación  --}}
+        
+        <div>
+            <a href="/">Formulario</a>  
+            <a href="/productos">Vista de Productos</a>  
+        </div>
+        
+
+        {{!-- Acá van a ir insertados los 'bodies' de Handlebars (el formulario o la vista de productos) --}}
+
+        <div>
+            {{{ body }}}
+        </div>
+
+    </div>
+
+</body>
+</html>
