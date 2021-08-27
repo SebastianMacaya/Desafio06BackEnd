@@ -58,11 +58,5 @@
         "price": "22",
         "url": "https://cdn3.iconfinder.com/data/icons/spring-2-1/30/Backpack-128.png",
         "id": 10
-    },
-    {
-        "title": "test",
-        "price": "33",
-        "url": "https://cdn1.iconfinder.com/data/icons/adventure-outline-1/64/Adventure-Line-22-128.png",
-        "id": 11
     }
 ]
