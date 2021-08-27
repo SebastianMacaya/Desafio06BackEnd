@@ -1,5 +1,8 @@
 const fs = require("fs");
 const archivo = JSON.parse(fs.readFileSync("./data.json", (encoding = "utf8")));
+const archivoMensajes = JSON.parse(
+  fs.readFileSync("./dataMensajes.json", (encoding = "utf8"))
+);
 
 class Product {
   async create(req, res) {
@@ -18,6 +21,16 @@ class Product {
     dataTemporal.push(newProduct);
     await fs.promises.writeFile("./data.json", JSON.stringify(dataTemporal));
     res.redirect("/");
+  }
+
+  async saveMessage(msg) {
+    const dataTemporal = archivoMensajes;
+    const newMensaje = msg;
+    dataTemporal.push(newMensaje);
+    await fs.promises.writeFile(
+      "./dataMensajes.json",
+      JSON.stringify(dataTemporal)
+    );
   }
 
   async updateById(req, res) {
@@ -47,6 +60,11 @@ class Product {
   async getAll(req, res) {
     const dataTemporal = archivo;
     res.json(dataTemporal);
+  }
+
+  getAllMessages(req, res) {
+    const dataTemporal = archivoMensajes;
+    return dataTemporal;
   }
 
   async findById(req, res) {
