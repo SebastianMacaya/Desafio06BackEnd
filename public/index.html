@@ -55,6 +55,33 @@
       </form>
     </div>
 
+    <!-- ------------------------------ productos ------------------------------ -->
+    <!-- TABLA DE PRODUCTOS: -->
+    <form id="productForm">
+      <h2>Agregar Productos</h2>
+      <label for="title">Producto:</label>
+      <input type="text" id="title" autocomplete="off" />
+      <!--  x  -->
+      <label for="price">Precio:</label>
+      <input type="text" id="price" autocomplete="off" />
+      <!--  x  -->
+      <label for="url">Url:</label>
+      <input type="text" id="url" />
+
+      <button id="submit">enviar</button>
+    </form>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre:</th>
+          <th>Precio:</th>
+          <th>Foto:</th>
+        </tr>
+      </thead>
+
+      <tbody id="listaProductos"></tbody>
+    </table>
     <script src="./js/main.js"></script>
   </body>
 </html>

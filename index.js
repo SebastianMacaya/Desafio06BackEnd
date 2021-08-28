@@ -22,6 +22,7 @@ app.use(express.static("public"));
 
 //Traigo todos los mensajes
 const mensajes = Products.getAllMessages();
+const contProductos = Products.getAll();
 
 io.on("connection", (socket) => {
   console.log(
@@ -40,6 +41,15 @@ io.on("connection", (socket) => {
 
     await products.saveMessage(msg); //Guardo los nuevos mensajes
     io.sockets.emit("mensajes", mensajes);
+  });
+
+  socket.emit("productos", contProductos);
+
+  // Leer desde el cliente la carga de un nuevo producto:
+
+  socket.on("nuevoProducto", async (producto) => {
+    await products.saveProduct(producto);
+    io.emit("productos", products);
   });
 });
 

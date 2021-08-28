@@ -1,15 +1,24 @@
 const socket = io.connect();
 //productos
 
-/* const productForm = document.getElementById("productForm");
+const title = document.getElementById("title");
+const price = document.getElementById("price");
+const url = document.getElementById("url");
+const productForm = document.getElementById("productForm");
+
 productForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
   const producto = {
-    title: productForm[0].value,
-    price: productForm[1].value,
-    url: productForm[2].value,
+    title: title.value,
+    price: price.value,
+    url: url.value,
   };
 
-  socket.emit("update", producto);
+  //emitir msg hacia el back
+
+  socket.emit("nuevoProducto", producto);
+
   productForm.reset();
 });
 
@@ -25,15 +34,12 @@ const tableRows = (products) =>
         `
         <tr>
             <td><h3>${prod.title}</h3></td>
-            <td><h4>${prod.price}</h4></td>
+            <td><h4>$${prod.price}</h4></td>
             <td><img class="img-thumbnail" src=${prod.url}></td>        
         </tr>
-     
-
-    
     `
     )
-    .reverse(); */
+    .reverse();
 
 // Mensajes :
 

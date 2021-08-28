@@ -23,6 +23,14 @@ class Product {
     res.redirect("/");
   }
 
+  async saveProduct(producto) {
+    const dataTemporal = archivo;
+    const newProduct = producto;
+    newProduct.id = dataTemporal.length + 1;
+    dataTemporal.push(newProduct);
+    await fs.promises.writeFile("./data.json", JSON.stringify(dataTemporal));
+  }
+
   async saveMessage(msg) {
     const dataTemporal = archivoMensajes;
     const newMensaje = msg;
@@ -57,9 +65,9 @@ class Product {
     res.json({ nota: "Fue borrado el producto" });
   }
 
-  async getAll(req, res) {
+  getAll(req, res) {
     const dataTemporal = archivo;
-    res.json(dataTemporal);
+    return dataTemporal;
   }
 
   getAllMessages(req, res) {
