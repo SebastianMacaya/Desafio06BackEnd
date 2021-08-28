@@ -19,6 +19,8 @@ app.use(express.json());
 
 app.use("/static", express.static(__dirname + "/public"));
 app.use(express.static("public"));
+
+//Traigo todos los mensajes
 const mensajes = Products.getAllMessages();
 
 io.on("connection", (socket) => {
@@ -35,9 +37,8 @@ io.on("connection", (socket) => {
   //recibo nuevo mensaje desde el front
   socket.on("nuevoMensaje", async (msg) => {
     msg.fyh = new Date().toLocaleString();
-    // console.log(msg);
 
-    await products.saveMessage(msg);
+    await products.saveMessage(msg); //Guardo los nuevos mensajes
     io.sockets.emit("mensajes", mensajes);
   });
 });
